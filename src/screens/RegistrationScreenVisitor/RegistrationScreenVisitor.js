@@ -29,6 +29,7 @@ export default function RegistrationScreen({navigation}) {
                     id: uid,
                     email,
                     fullName,
+                    type: 'visitor'
                 };
                 const usersRef = firebase.firestore().collection('users')
                 usersRef
@@ -52,7 +53,7 @@ export default function RegistrationScreen({navigation}) {
                 style={{ flex: 1, width: '100%' }}
                 keyboardShouldPersistTaps="always">
                 <Text style={styles.title}>sign up</Text>
-                <View style ={{flex:1, flexDirection: 'row', marginVertical: 30}}>
+                <View style ={{fflex:1, flexDirection: 'row', alignSelf: 'center', margin: 30}}>
                     <TouchableOpacity
                         style={styles.visitorButton}>
                         <Text style={{color: 'white', fontSize: 16}}>visitor</Text>

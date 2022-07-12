@@ -5,7 +5,7 @@ export default StyleSheet.create({
         flex: 1,
         alignItems: 'center',
         justifyContent: 'center',
-        marginTop:150 // TODO: fix
+        marginTop:150 // TODO: fix spacing
     },
     title: {
         alignSelf: "center",
