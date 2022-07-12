@@ -3,13 +3,12 @@ import { StyleSheet } from 'react-native';
 export default StyleSheet.create({
     container: {
         flex: 1,
-        justifyContent: 'center',
         alignItems: 'center',
-        marginTop:200   // TODO: fix spacing
-        },
+        justifyContent: 'center',
+        marginTop:150 // TODO: fix
+    },
     title: {
         alignSelf: "center",
-        margin: 30,
         fontSize: 48,
         color: '#575FCC',
         fontWeight: '500'
@@ -31,7 +30,32 @@ export default StyleSheet.create({
         marginRight: 30,
         marginTop: 20,
         height: 48,
-        width: 120,
+        width: 140,
+        borderRadius: 20,
+        alignItems: "center",
+        alignSelf: "center",
+        justifyContent: 'center'
+    },
+    visitorButton: {
+        borderColor: '#8FD8B5',
+        borderWidth: 2,
+        marginLeft: 30,
+        marginRight: 30,
+        marginTop: 20,
+        height: 48,
+        width: 140,
+        borderRadius: 20,
+        alignItems: "center",
+        alignSelf: "center",
+        justifyContent: 'center'
+    },
+    vendorButton: {
+        backgroundColor: '#FABF48',
+        marginLeft: 30,
+        marginRight: 30,
+        marginTop: 20,
+        height: 48,
+        width: 140,
         borderRadius: 20,
         alignItems: "center",
         alignSelf: "center",
@@ -41,6 +65,10 @@ export default StyleSheet.create({
         color: 'white',
         fontSize: 16,
         fontWeight: "bold"
+    },
+    altButtonTitle: {
+        color: 'white',
+        fontSize: 16,
     },
     footerView: {
         flex: 1,
